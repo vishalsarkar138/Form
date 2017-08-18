@@ -1,0 +1,32 @@
+:root{
+    background-color:#bdd4ff
+}
+#container{
+    border-width: 50px;
+}
+
+.box{
+    display:inline-block;
+    padding-right: 200px;
+    font-family: sans-serif;
+    border-color: #7179ff;
+    border-radius: 15px;
+    border-width: 5px
+     }
+input[type="submit"]{
+    margin-left: 5px; 
+    padding:4px 7px;
+ }
+body{
+    max-width:800px;
+    margin: 0 auto ;
+    padding-bottom: 80px;
+}
+h1{
+    font-family: Verdana;
+    color:#5052b5
+}
+input,textarea{
+    background:#ccf4ed;
+    border-radius: 6px;
+}

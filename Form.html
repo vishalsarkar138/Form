@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">  
+    </head>
+    <body>
+        <div id="container">
+        <h1> Add new Shipment</h1>
+        <form name="form1" method="post" action="insert.php">
+            <fieldset class="box">
+                <legend>Sender Details</legend>
+                <p>Name:<br><input type="text" name="ship_name" ></p>
+                <p>Address:<br><textarea rows=4 cols=21  name="ship_add"></textarea></p>
+                <p>Phone no:<br><input type="text"  name="ship_phone"></p>
+            </fieldset><br>
+            <fieldset class="box">
+                <legend>Receiver Details</legend>
+                <p>Name:<br><input type="text" name="rev_name" ><br></p>
+                <p>Address:<br><textarea rows=4 cols=21  name="rev_add"></textarea></p>
+                <p>Phone no.<br><input type="text"  name="rev_phone"></p>
+            </fieldset><br>
+            <fieldset class="box">
+                <legend>Shipment Details</legend>
+                <p>Type of Shipment:<br>
+                    <input class="radio" type="radio" value="Document" name="type_of_ship">Document 
+                    <input type="radio" class="radio" value="Parcel" name="type_of_ship">Parcel<br></p>
+                <p>Weight of Shipment (in grams):<br>
+                    <input type="text" name="ship_weight"></p>
+                <p>Payment:<br>
+                    <input type="radio" class="radio" value="Paid" name="book_mode">Paid
+                    <input type="radio" class="radio" value="ToPay" name="book_mode">To be Paid </p>
+                <p>Shipment Medium:<br>
+                    <select name="ship_mode">
+                            <option>--SELECT--</option>
+                            <option value="Air">Air</option>
+                            <option value="Road">Road</option>
+                            <option value="Train">Train</option>
+                            <option value="Sea">Sea</option>
+                    </select></p>
+                <p>No. Of Shipments:<br>
+                    <input type="text" name="ship_qty"></p>
+                <p>Booking Date<br>
+                    <input type="date" name="book_date"></p>
+                <p>Pick Up Date:<br>
+                    <input type="date" name="pick_date"></p>
+                <p>Pick Up Time:<br>
+                    <input type="time" name="pick_time"></p>
+                <p>Freight Charge:<br>
+                    <input type="text" name="freight"></p>                
+                <p>Comment:<br>
+                    <textarea rows=4 cols=21 name="comments"></textarea></p>
+            </fieldset><br><br>
+            <input type="submit" value="Submit"  >
+        </form>
+        </div>
+        
+    </body>
+</html>
